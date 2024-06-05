@@ -1,0 +1,572 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.eot');
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.eot?#iefix') format('embedded-opentype'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.woff2') format('woff2'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.woff') format('woff'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.eot');
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.eot?#iefix') format('embedded-opentype'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.woff2') format('woff2'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.woff') format('woff'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.eot');
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.eot?#iefix') format('embedded-opentype'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff2') format('woff2'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff') format('woff'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.eot');
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.eot?#iefix') format('embedded-opentype'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.woff2') format('woff2'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.woff') format('woff'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.eot');
+    src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.eot?#iefix') format('embedded-opentype'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.woff2') format('woff2'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.woff') format('woff'),
+        url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.ttf') format("truetype");
+    font-display: swap;
+}
+
+:root {
+    --primary--noraml: #130c47;
+    --royal-blue: #1f6fff;
+    --secondary--active: #4c54c4;
+    --secondary--hover: #7e91dc;
+    --flowui-component-library--gray-200: #f3f5fb;
+    --flowui-component-library--gray-900: #160042;
+    --primary--color: white;
+    --medium-orchid: #b75dda;
+    --flowui-component-library--gray-100: #f7f9fd;
+    --primary--strong: #170f57;
+    --flowui-component-library--white: white;
+    --flowui-component-library--gray-500: #6b7094;
+    --primary--disabled: rgba(19, 12, 71, .5);
+    --primary--active: #170f57;
+    --secondary--disabled: rgba(88, 104, 207, .5);
+    --information--normal: #1154ff;
+    --secondary--subtle: #e2e6f7;
+    --secondary--strong: #3b3b92;
+    --success--disabled: rgba(3, 182, 74, .5);
+    --spark-library--white: white;
+    --spark-library--foreground-interactive: #5532fa;
+    --spark-library--background--interactive: #f0ecfd;
+    --spark-library--foreground-interactive-hover: #1e116e;
+    --spark-library--black: black;
+    --spark-library--foreground-secondary: rgba(0, 0, 0, .76);
+    --flowui-component-library--grey-300: #e4e6f1;
+    --information--disabled: rgba(17, 84, 255, .5);
+    --secondary--normal: #5868cf;
+    --flowui-component-library--gray-700: #282556;
+    --lime-green: #5ec045;
+    --primary--hover: #241996;
+    --primary--subtle: #442cff;
+    --success--normal: #03b64a;
+    --success--hover: #0cdb5e;
+    --success--active: #068f3d;
+    --information--hover: #327aff;
+    --information--active: #033bf2;
+    --warning--normal: #f65c00;
+    --warning--hover: #ff7910;
+    --warning--active: #ce4200;
+    --warning--disabled: rgba(246, 92, 0, .5);
+    --danger--normal: #f5160f;
+    --danger--hover: #ff3a34;
+    --danger--active: #ce0d07;
+    --danger--disabled: rgba(245, 22, 15, .5);
+    --write: white;
+    --font-family: 'NanumSquareNeo', sans-serif;
+    --text-lg: 16px;
+    --text-md: 14px;
+    --text-sm: 13px;
+    --text-mn: 12px;
+    --gt-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root,
+html {
+    font-size: 12px;
+}
+
+@media (min-width:768px) {
+
+    :root,
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    :root,
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    color: #333333;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.5;
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input,
+textarea {
+    font-family: var(--font-family);
+}
+
+input:focus,
+input:hover {
+    outline: none;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.row {
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 16px;
+}
+
+[data-aos=fade-up] {
+    transform: translate3d(0, 40px, 0);
+}
+
+[data-aos=fade-down] {
+    transform: translate3d(0, -40px, 0);
+}
+
+[data-aos=fade-left] {
+    transform: translate3d(0, 0, 0, -40px);
+}
+
+/* **************************************** *
+ * Common
+ * **************************************** */
+.common-wrap .header {
+    align-items: center;
+    background: #2C478E;
+    display: flex;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.common-wrap .header h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.common-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.common-body aside {
+    background: #F4F5F7;
+    height: auto;
+    padding: 20px;
+    width: 200px;
+}
+
+.common-body aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.common-body aside ul li a {
+    color: #333;
+    font-size: 16px;
+}
+
+.common-element {
+    padding: 20px;
+    width: calc(100% - 200px);
+}
+
+.common-element table {
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.common-element tr:nth-child(1) {
+    height: 40px;
+}
+
+.common-element tr td {
+    font-size: 14px;
+}
+
+.common-element tr td:nth-child(1) {
+    width: 100px;
+}
+
+
+.mo {
+    display: block;
+}
+
+.pc {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .mo {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+/* **************************************** *
+ * header 
+ * **************************************** */
+.header {
+    align-items: center;
+    background: var(--primary--noraml);
+    display: flex;
+    padding: .75rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .navbar-brand {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.header .navbar-brand span {
+    color: var(--write);
+    font-size: 1rem;
+}
+
+.header .navbar-brand img {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.header .navbar-toggler {
+    border: 0;
+    padding: 0;
+    margin: 0 0 0 auto;
+}
+
+.header .navbar-toggler:hover {
+    box-shadow: none;
+}
+
+.header .navbar-toggler-icon {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.header .nav-item button {
+    background: white;
+    border: 0;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #303e57;
+    margin: 8px 0 0 0;
+    padding: 0.5rem 1rem;
+}
+
+@media (min-width: 992px) {
+    .header {
+        padding: 1rem 0;
+    }
+
+    .header .container {
+        flex-wrap: nowrap;
+    }
+
+    .header .navbar-brand {
+        gap: 0.5rem;
+    }
+
+    .header .navbar-toggler {
+        display: none;
+    }
+
+    .collapse:not(.show) {
+        display: flex;
+    }
+
+    .header .navbar-nav {
+        align-items: center;
+        flex-direction: row;
+        margin: 0 0 0 auto;
+    }
+
+    .header .nav-item {
+        align-items: center;
+        display: flex;
+    }
+
+    .header .nav-item:first-child::after {
+        background-color: #e4ebf3;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 1rem;
+    }
+
+    .header .nav-item .nav-link {
+        padding: 0 2rem;
+    }
+
+    .header .nav-item button {
+        margin: 0;
+    }
+}
+
+/* **************************************** *
+ * footer 
+ * **************************************** */
+.footer {
+    background: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-top a {
+    align-items: center;
+    display: flex;
+    gap: .75rem;
+    margin: 0 0 1rem 0;
+}
+
+.footer-top img {
+    height: 3rem;
+}
+
+.footer-top span {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.footer-top p {
+    font-size: 1.25rem;
+}
+
+.btn-kakao {
+    background: #f7e600;
+    border: 0;
+    border-radius: 4px;
+    color: #3a1d1d;
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin: 1rem 0 0 0;
+    padding: 1rem 1.25rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--primary--noraml);
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    color: var(--primary--noraml);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    margin: 0.75rem 0 0 0;
+}
+
+.footer-icon li a {
+    border-radius: 2px;
+    padding: 0.5rem;
+}
+
+.footer-icon li a i {
+    color: var(--primary--noraml);
+}
+
+@media (min-width: 992px) {
+    .footer {
+        padding: 2.5rem 0;
+    }
+
+    .footer-top p {
+        font-size: 1rem;
+    }
+
+
+    .footer-icon {
+        justify-content: flex-end;
+        margin: 0;
+    }
+}
+
+/* **************************************** *
+ * accordion 
+ * **************************************** */
+.accordion {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 20px auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 15px;
+}
+
+.accordion-text {
+    background: #1f6fff;
+    border-radius: 12px;
+    color: #fff;
+    margin: 0 16px 16px 16px;
+}
+
+.accordion-text p {
+    line-height: 2;
+}
+
+.accordion-header {
+    background: #333333;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 800;
+    outline: none;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.accordion-item {
+    background: #333333;
+    border-radius: 12px !important;
+    border: 0;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+@media (min-width:992px) {
+    .accordion-header {
+        font-size: 1rem;
+    }
+}
