@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Start : Header -->
+        <header class="header" id="header">
+            <!-- 내부 html common.js 확인 -->
+        </header>
+        <!-- End : Header -->
+
+
+        <main>
+            <section class="sub-top">
+                <div class="bg-overlay">
+                    <div class="container">
+                        <h1>Contents Base</h1>
+                        <h6>컨텐츠 베이스는 작성되는 포스팅에 대해<br class="mo">기본 정보를 입력하는 작업입니다.<br><br>모든 포스팅의 기본이 되며,<br>
+                            맞춤형 포스팅을 위한 필수적인 작업입니다.<br><br>최대한, 자세한 설명으로 맞춤형 포스팅을 작성하세요.</h6>
+                    </div>
+                </div>
+            </section>
+            <section class="sub-content">
+                <div class="container">
+                    <div class="content-base-wrap">
+                        <!-- 베이스 선택-->
+                        <div class="content-base-group">
+                            <h3>신규 생성 또는 수정할 컨텐츠 베이스를 선택하세요.</h3>
+                            <ul class="nav nav-tabs" id="contentBase" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contentNew" type="button" role="tab" aria-controls="home"
+                                        aria-selected="true">[신규생성]</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="" id="profile-tab" data-bs-toggle="tab" data-bs-target="#contentEdit"
+                                        type="button" role="tab" aria-controls="profile" aria-selected="false">[기존 데이터
+                                        수정]</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="contentBaseContent">
+                                <div class="tab-pane fade show active" id="contentNew" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="am-input-group">
+                                        <label for="input01">생성 할 컨텐츠 베이스의 이름을 작성해주세요.</label>
+                                        <input type="text" placeholder="예시)20240602_회사브랜드용_XXX용도">
+                                    </div>
+                                    <div class="am-btn-group mt-2">
+                                        <button type="button" class="btn-am-secondary btn-content-base">콘텐츠 베이스
+                                            이름</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="contentEdit" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="select-group">
+                                        <label for="contentEditName">수정할 컨텐츠 베이스 이름을 선택해주세요.</label>
+                                        <select name="" id="contentEditName">
+                                            <option value="">수정할 컨텐츠 베이스를 선택하세요.</option>
+                                        </select>
+                                    </div>
+                                    <div class="am-btn-group mt-2">
+                                        <button type="button" class="btn-am-secondary btn-content-base">콘텐츠 베이스
+                                            불러오기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 목적 선택-->
+                        <div class="content-base-group">
+                            <h3>1. 쇼셜마케팅의 목적를 선택해주세요.</h3>
+                            <p class="desc">쇼셜마케팅을 왜 하는지, 그 이유를 선택합니다.<br>만약, 정보가 부족하다면 고객센터로 문의주세요.</p>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#CompanyAccountOne" type="button" role="tab"
+                                        aria-controls="home" aria-selected="true">[회사계정]<br class="mo">판매 및 홍보</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#CompanyAccountTwo" type="button" role="tab"
+                                        aria-controls="profile" aria-selected="false">[회사계정]<br class="mo">브랜드 인지도</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#PersonalAccount" type="button" role="tab"
+                                        aria-controls="profile" aria-selected="false">[개인계정]<br class="mo">활성화</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="contentBasePurpose">
+                                <div class="tab-pane fade show active" id="CompanyAccountOne" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="select-group">
+                                        <label for="contentEditName">1) 구체적인 목적을 아래 보기 중, 하나 선택해주세요. </label>
+                                        <select name="" id="contentEditName">
+                                            <option value="제품 및 서비스 홍보">제품 및 서비스 홍보</option>
+                                            <option value="신규 고객 확보">신규 고객 확보</option>
+                                            <option value="고객 유치 및 충성도 증대">고객 유치 및 충성도 증대</option>
+                                        </select>
+                                    </div>
+                                    <div class="am-file-group mt-4">
+                                        <h3>2) 회사 소개서를 PDF로 업로드 해주세요.</h3>
+                                        <div class="file-area">
+                                            <input type="file" id="file01">
+                                            <label for="file01"><i class="bi bi-cloud-arrow-up-fill"></i>Upload
+                                                File</label>
+                                            <p>Max file size 10MB.</p>
+                                        </div>
+                                    </div>
+                                    <div class="am-file-group mt-4">
+                                        <h3>3) 제품 및 서비스 소개서를 업로드 해 주세요.</h3>
+                                        <div class="file-area">
+                                            <input type="file" id="file02">
+                                            <label for="file02"><i class="bi bi-cloud-arrow-up-fill"></i>Upload
+                                                File</label>
+                                            <p>Max file size 10MB.</p>
+                                        </div>
+                                    </div>
+                                    <div class="am-btn-group mt-4">
+                                        <button type="button" class="btn-am-secondary btn-content-base">포스팅의 목적
+                                            저장</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="CompanyAccountTwo" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="select-group">
+                                        <label for="contentEditName">1) 구체적인 목적을 아래 보기 중, 하나 선택해주세요. </label>
+                                        <select name="" id="contentEditName">
+                                            <option value="브랜드 인지도 강화">브랜드 인지도 강화</option>
+                                            <option value="고객 소통 강화">고객 소통 강화</option>
+                                            <option value="웹사이트 트래픽 증가">웹사이트 트래픽 증가</option>
+                                        </select>
+                                    </div>
+                                    <div class="am-file-group mt-4">
+                                        <h3>2) 회사 소개서를 PDF로 업로드 해주세요.</h3>
+                                        <div class="file-area">
+                                            <input type="file" id="file01">
+                                            <label for="file01"><i class="bi bi-cloud-arrow-up-fill"></i>Upload
+                                                File</label>
+                                            <p>Max file size 10MB.</p>
+                                        </div>
+                                    </div>
+                                    <div class="am-file-group mt-4">
+                                        <h3>3) 제품 및 서비스 소개서를 업로드 해 주세요.</h3>
+                                        <div class="file-area">
+                                            <input type="file" id="file02">
+                                            <label for="file02"><i class="bi bi-cloud-arrow-up-fill"></i>Upload
+                                                File</label>
+                                            <p>Max file size 10MB.</p>
+                                        </div>
+                                    </div>
+                                    <div class="am-btn-group mt-4">
+                                        <button type="button" class="btn-am-secondary btn-content-base">목적 저장</button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="PersonalAccount" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="select-group">
+                                        <label for="contentEditName">1) 구체적인 목적을 아래 보기 중, 하나 선택해주세요. </label>
+                                        <select name="" id="contentEditName">
+                                            <option value="개인 전문가 홍보">개인 전문가 홍보</option>
+                                            <option value="개인적 취미 공유">개인적 취미 공유</option>
+                                            <option value="개인 일상 기록">개인 일상 기록</option>
+                                            <option value="네트워킹">네트워킹</option>
+                                        </select>
+                                    </div>
+                                    <div class="am-file-group mt-4">
+                                        <h3>2) 개인 소개서를 PDF로 업로드 해 주세요. (또는 어필하고자 하는 내용을 업로드 해주세요)</h3>
+                                        <div class="file-area">
+                                            <input type="file" id="file01">
+                                            <label for="file01"><i class="bi bi-cloud-arrow-up-fill"></i>Upload
+                                                File</label>
+                                            <p>Max file size 10MB.</p>
+                                        </div>
+                                    </div>
+                                    <div class="am-btn-group mt-4">
+                                        <button type="button" class="btn-am-secondary btn-content-base">목적 저장</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 속성 선택 -->
+                        <div class="content-base-group">
+                            <h3>2. 목표 고객의 속성을 선택해주세요.</h3>
+                            <p class="desc">우리 포스팅을 어떤 사람이 구독할지에 대한 구체적인 설정 과정입니다.<br>만약, 정보가 부족하다면 고객센터로 문의주세요.</p>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active">
+                                    <div class="select-group">
+                                        <label for="age">1) 목표 고객의 연령대를 모두 선택해주세요.</label>
+                                        <select name="" id="age">
+                                            <option value="18세 이하">18세 이하</option>
+                                            <option value="20대 초반 (19세 ~ 25세)">20대 초반 (19세 ~ 25세)</option>
+                                            <option value="20대 후반 (26세 ~ 29세)">20대 후반 (26세 ~ 29세)</option>
+                                            <option value="30대 초반 (30세 ~ 34세)">30대 초반 (30세 ~ 34세)</option>
+                                            <option value="30대 후반 (35세 ~ 39세)">30대 후반 (35세 ~ 39세)</option>
+                                            <option value="40대 초반 (40세 ~ 44세)">40대 초반 (40세 ~ 44세)</option>
+                                            <option value="40대 후반 (45세 ~ 49세)">40대 후반 (45세 ~ 49세)</option>
+                                            <option value="50세 이상">50세 이상</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group mt-4">
+                                        <label for="gender">2) 목표 고객의 성별을 선택해주세요.</label>
+                                        <select name="" id="gender">
+                                            <option value="남성">남성</option>
+                                            <option value="여성">여성</option>
+                                            <option value="성별 관계 없음">성별 관계 없음.</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group mt-4">
+                                        <label for="job">3) 목표 고객의 직업을 선택해주세요.</label>
+                                        <select name="" id="job">
+                                            <option value="중학생 / 고등학생">중학생 / 고등학생</option>
+                                            <option value="대학생">대학생</option>
+                                            <option value="사무직">사무직</option>
+                                            <option value="관리자/경영자">관리자/경영자</option>
+                                            <option value="판매/서비스직">판매/서비스직</option>
+                                            <option value="기술직/엔지니어">기술직/엔지니어</option>
+                                            <option value="자영업자">자영업자</option>
+                                            <option value="프리랜서">프리랜서</option>
+                                            <option value="의료/보건 종사자">의료/보건 종사자</option>
+                                            <option value="교사/교육자">교사/교육자</option>
+                                            <option value="예술가/디자이너">예술가/디자이너</option>
+                                            <option value="연구원/학자">연구원/학자</option>
+                                            <option value="주부">주부</option>
+                                            <option value="은퇴자">은퇴자</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group mt-4">
+                                        <label for="interest">4) 목표 고객의 관심사를 선택해주세요.</label>
+                                        <select name="" id="interest">
+                                            <option value="IT/기술">IT/기술</option>
+                                            <option value="금융/재무">금융/재무</option>
+                                            <option value="교육">교육</option>
+                                            <option value=" 헬스케어"> 헬스케어</option>
+                                            <option value=" 마케팅/광고"> 마케팅/광고</option>
+                                            <option value=" 패션/뷰티"> 패션/뷰티</option>
+                                            <option value=" 예술/디자인"> 예술/디자인</option>
+                                            <option value=" 음식/요리"> 음식/요리</option>
+                                            <option value=" 여행/관광"> 여행/관광</option>
+                                            <option value=" 스포츠"> 스포츠</option>
+                                            <option value=" 음악"> 음악</option>
+                                            <option value=" 영화/TV"> 영화/TV</option>
+                                            <option value=" 독서"> 독서</option>
+                                            <option value=" 게임"> 게임</option>
+                                            <option value=" 건강/피트니스"> 건강/피트니스</option>
+                                        </select>
+                                    </div>
+                                    <div class="am-btn-group mt-4">
+                                        <button type="button" class="btn-am-secondary btn-content-base">목표 고객 인구 통계학적 정보
+                                            저장</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 톤/스타일 선택-->
+                        <div class="content-base-group">
+                            <h3>3. 포스팅의 톤과 스타일을 선택해주세요.</h3>
+                            <p class="desc">포스트의 전반적인 스타일을 정의합니다.<br>
+                                원하는 포스팅의 스타일을 선택해주세요.</p>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active">
+                                    <div class="select-group">
+                                        <label for="style">1) 포스팅의 전반적인 스타일은 어떻게 설정하시겠습니까?</label>
+                                        <select name="" id="style">
+                                            <option value="전문적">전문적</option>
+                                            <option value="친근한">친근한</option>
+                                            <option value="유머러스한">유머러스한</option>
+                                            <option value="영감을 주는">영감을 주는</option>
+                                            <option value="교육적인">교육적인</option>
+                                            <option value="정보 전달 중심">정보 전달 중심</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group mt-4">
+                                        <label for="tone">2) 포스팅의 어조는 어떻게 설정하시겠습니까?</label>
+                                        <select name="" id="tone">
+                                            <option value="공식적">공식적</option>
+                                            <option value="비공식적">비공식적</option>
+                                            <option value="권위적">권위적</option>
+                                            <option value="공감적">공감적</option>
+                                            <option value="설득적">설득적</option>
+                                            <option value="중립적">중립적</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group mt-4">
+                                        <label for="literaryStyle">3) 포스팅의 문체는 어떻게 설정하시겠습니까?</label>
+                                        <select name="" id="literaryStyle">
+                                            <option value="간결한">간결한</option>
+                                            <option value="상세한">상세한</option>
+                                            <option value="감성적인">감성적인</option>
+                                            <option value="논리적인">논리적인</option>
+                                            <option value="대화형">대화형</option>
+                                            <option value="이야기 형식">이야기 형식</option>
+                                        </select>
+                                    </div>
+                                    <div class="am-btn-group mt-4">
+                                        <button type="button" class="btn-am-secondary btn-content-base">포스팅 스타일 정보 저장</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 포스팅 주제 -->
+                        <div class="content-base-group">
+                            <h3>4. 포스팅의 주제를 구체적으로 작성해주세요.</h3>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active">
+                                    <div class="am-input-group">
+                                        <label for="input01">포스팅 주제를 작성해주세요.</label>
+                                        <input type="text" placeholder="포스팅 주제를 작성해주세요.">
+                                    </div>
+                                    <div class="am-btn-group mt-4">
+                                        <button type="button" class="btn-am-secondary btn-content-base">포스팅 주제 정보 저장</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+
+        <!-- Start : Footer -->
+        <footer class="footer" id="footer">
+            <!-- 내부 html common.js 확인 -->
+        </footer>
+        <!-- Start : End -->
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/aos.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

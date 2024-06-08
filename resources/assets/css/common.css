@@ -106,7 +106,7 @@
     --danger--hover: #ff3a34;
     --danger--active: #ce0d07;
     --danger--disabled: rgba(245, 22, 15, .5);
-    --write: white;
+    --white: white;
     --font-family: 'NanumSquareNeo', sans-serif;
     --text-lg: 16px;
     --text-md: 14px;
@@ -123,15 +123,7 @@
 
 :root,
 html {
-    font-size: 12px;
-}
-
-@media (min-width:768px) {
-
-    :root,
-    html {
-        font-size: 14px;
-    }
+    font-size: 14px;
 }
 
 @media (min-width: 992px) {
@@ -569,4 +561,174 @@ textarea {
     .accordion-header {
         font-size: 1rem;
     }
+}
+
+/* **************************************** *
+ * button
+ * **************************************** */
+.am-btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+.am-btn-group.center {
+    justify-content: center;
+}
+
+.am-btn-group.vertical {
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.am-btn-group button {
+    border: 0;
+    border-radius: 8px;
+}
+
+.btn-am-primary {
+    background: var(--primary--noraml);
+    color: var(--white);
+}
+
+.btn-am-secondary {
+    background: var(--secondary--strong);
+    color: var(--white);
+}
+
+/* **************************************** *
+ * input
+ * **************************************** */
+.check-group {
+    align-items: center;
+    display: flex;
+}
+
+.check-group input {
+    display: none;
+}
+
+.check-group label {
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    gap: 4px;
+}
+
+.check-group label::before {
+    background: url(../img/ico/i-checkbox.png) no-repeat;
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.check-group input:checked+label::before {
+    background: url(../img/ico/i-checkbox-checked.png) no-repeat;
+    background-size: cover;
+}
+
+/* select */
+.select-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.select-group label {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.select-group select {
+    background: #ffffff url(../img/ico/i-arrow-down.png) no-repeat 50%/16px;
+    background-position: right 0.75rem center;
+    border: 1px solid var(--secondary--disabled);
+    border-radius: 8px;
+    font-size: 1rem;
+    height: 40px;
+    padding: 0 0.75rem;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-group select:focus {
+    outline: none;
+}
+
+@media (min-width:992px) {
+    .select-group select {
+        height: 48px;
+    }
+}
+
+/* input */
+.am-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.am-input-group label {
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 800;
+    display: flex;
+    gap: 4px;
+}
+
+.am-input-group input {
+    border: 1px solid var(--secondary--disabled);
+    border-radius: 8px;
+    font-size: 1rem;
+    height: 40px;
+    padding: 0 0.75rem;
+}
+
+/* file */
+.am-file-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.am-file-group h3 {
+    font-size: 1rem !important;
+    gap: 4px;
+    margin: 0 !important;
+}
+
+.file-area {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    position: relative;
+}
+
+.am-file-group input {
+    display: none;
+}
+
+.am-file-group label {
+    align-items: center;
+    background: var(--white);
+    border: 1px solid var(--secondary--disabled);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    gap: 4px;
+    height: 40px;
+    padding: 0 16px;
+}
+
+.am-file-group label i {
+    color: #333333;
+    font-size: 16px;
+}
+
+.am-file-group p {
+    font-size: 1rem;
 }

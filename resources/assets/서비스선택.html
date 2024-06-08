@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- Start : Header -->
+        <header class="header" id="header">
+            <!-- 내부 html common.js 확인 -->
+        </header>
+        <!-- End : Header -->
+
+
+        <main>
+            <section class="sub-top">
+                <div class="bg-overlay">
+                    <div class="container">
+                        <h1>Auto Marketing</h1>
+                        <h6>손쉬운 마케팅 자동화를 셋팅하세요.<br>마케팅은 오토마케팅 이제,<br>사업에만 신경 쓰세요.</h6>
+                    </div>
+                </div>
+            </section>
+            <section class="sub-content">
+                <div class="container mo">
+                    <div class="step-group-wrap">
+                        <!-- STEP 1 -->
+                        <div class="step-group">
+                            <div class="step-header">
+                                <span>Step #1</span>
+                                <h6>셋팅 할 요금제 선택하기</h6>
+                            </div>
+                            <div class="step-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="service-box">
+                                            <p>오토마케팅의 요금제는 충전형과 서비스 별 월정액으로 나누어져 있습니다.<br>필요한 요금제를 선택하여 가입해주세요.</p>
+                                            <div class="am-btn-group vertical">
+                                                <button type="button" class="btn-am-primary">요금제 가입하기</button>
+                                                <button type="button" class="btn-kakao"
+                                                    onclick="location.href='https://open.kakao.com/o/sm9tCcsg'">고객센터(카카오톡)
+                                                    문의하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="am-card">
+                                                    <div class="am-card-header">
+                                                        <h3>충전형 요금제</h3>
+                                                    </div>
+                                                    <div class="am-card-body">
+                                                        <dl class="point">
+                                                            <dt>잔여 Point<span>88,888 Point</span></dt>
+                                                            <dd>
+                                                                <div class="check-group">
+                                                                    <input type="checkbox" id="check01">
+                                                                    <label for="check01">포인트 선택</label>
+                                                                </div>
+                                                            </dd>
+                                                        </dl>
+                                                        <div class="select-group">
+                                                            <select name="" id="">
+                                                                <option value="" selected>서비스 선택하기</option>
+                                                                <option value="블로그 생성">블로그 생성</option>
+                                                                <option value="페이스북 생성">페이스북 생성</option>
+                                                                <option value="인스타그램 생성">인스타그램 생성</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="am-card">
+                                                    <div class="am-card-header">
+                                                        <h3>월정액 요금제</h3>
+                                                    </div>
+                                                    <div class="am-card-body">
+                                                        <ul class="plan-group">
+                                                            <li>
+                                                                <div class="plan">
+                                                                    <h6>월정액 - 블로그 생성(12건/월)</h6>
+                                                                    <div class="check-group">
+                                                                        <input type="checkbox" id="check02">
+                                                                        <label for="check02">선택</label>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="plan">
+                                                                    <h6>월정액 - BLOG Ⅱ</h6>
+                                                                    <div class="check-group">
+                                                                        <input type="checkbox" id="check03">
+                                                                        <label for="check03">선택</label>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="plan">
+                                                                    <h6>월 정액 - SNS Ⅱ (인스타그램)</h6>
+                                                                    <div class="check-group">
+                                                                        <input type="checkbox" id="check04">
+                                                                        <label for="check04">선택</label>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="plan">
+                                                                    <h6>월정액 - 블로그 생성 (12건/월)
+                                                                    </h6>
+                                                                    <div class="check-group">
+                                                                        <input type="checkbox" id="check05">
+                                                                        <label for="check05">선택</label>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="am-btn-group center">
+                                                    <button type="button" class="btn-am-primary btn-plan-check">요금제
+                                                        선택</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- STEP 2-->
+                        <div class="step-group">
+                            <div class="step-header">
+                                <span>Step #2</span>
+                                <h6>컨텐츠 베이스 선택하기</h6>
+                            </div>
+                            <div class="step-body">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="service-box">
+                                            <p>컨텐츠 베이스란, 작성할 포스팅에 대해 기본 정보로 모든 포스팅의 기본이 되며,
+                                                맞춤형 포스팅을 위한 필수적인 작업입니다.<br>아직 설정하지 않았다면, 먼저 설정해주세요.</p>
+                                            <div class="am-btn-group vertical">
+                                                <button type="button" class="btn-am-primary"
+                                                    onclick="location.href='컨텐츠베이스.html'">컨텐츠 베이스 작성하기</button>
+                                                <button type="button" class="btn-kakao"
+                                                    onclick="location.href='https://open.kakao.com/o/sm9tCcsg'">고객센터(카카오톡)
+                                                    문의하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="am-card">
+                                                    <div class="am-card-body">
+                                                        <div class="select-group">
+                                                            <label for="contentBase">컨텐츠 베이스를 선택하세요.</label>
+                                                            <select name="" id="contentBase">
+                                                                <option value="" selected>컨텐츠 베이스를 선택하세요.</option>
+                                                                <option value="Sample">Sample</option>
+                                                                <option value="Sample">Sample</option>
+                                                                <option value="Sample">Sample</option>
+                                                                <option value="Sample">Sample</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- STEP 3-->
+                        <div class="step-group">
+                            <div class="step-header">
+                                <span>Step #3</span>
+                                <h6>자동 콘텐츠 생성하기</h6>
+                            </div>
+                            <div class="step-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="service-box">
+                                            <p>우측 '콘텐츠' 작성하기' 버튼을 클릭하면 콘텐츠 작성을 시작합니다.<br>- 충전형 요금제는 1회에 1개만 작성이
+                                                가능합니다.<br>- 정액제 요금제는 1회에 3개씩 작성이 가능합니다.</p>
+                                            <div class="am-btn-group vertical">
+                                                <button type="button" class="btn-am-primary"
+                                                    onclick="location.href='컨텐츠베이스.html'">컨텐츠 작성하기</button>
+                                                <button type="button" class="btn-kakao"
+                                                    onclick="location.href='https://open.kakao.com/o/sm9tCcsg'">고객센터(카카오톡)
+                                                    문의하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- STEP 4 -->
+                        <div class="step-group">
+                            <div class="step-header">
+                                <span>Step #4</span>
+                                <h6>포스팅 자동화 셋팅하기</h6>
+                            </div>
+                            <div class="step-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>사용자 정보 > 문서함 관리로 진입하면, 생성된 포스팅을 확인 할 수 있습니다.<br>
+                                            하단의 자동화를 설정하지 않고, 수동으로 포스팅도 가능합니다.<br><br>(포스팅 자동화는 월정액 요금제만 가능합니다.단, 네이버
+                                            블로그는 네이버 정책 상 불가능합니다.)</p>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="am-card">
+                                                    <div class="am-card-body">
+                                                        <ul class="plan-group">
+                                                            <li>
+                                                                <div class="plan">
+                                                                    <h6>{포스팅 개요 #1}</h6>
+                                                                    <div class="check-group">
+                                                                        <input type="checkbox" id="check02">
+                                                                        <label for="check02">선택</label>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="plan">
+                                                                    <h6>{포스팅 개요 #1}</h6>
+                                                                    <div class="check-group">
+                                                                        <input type="checkbox" id="check03">
+                                                                        <label for="check03">선택</label>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="plan">
+                                                                    <h6>{포스팅 개요 #1}</h6>
+                                                                    <div class="check-group">
+                                                                        <input type="checkbox" id="check04">
+                                                                        <label for="check04">선택</label>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="am-card">
+                                                    <div class="am-card-body">
+                                                        <!-- 포스팅 개요 선택 시, 해당 부분에 달력이 나오고 하단에 시간을 설정할 수 있는 UI 추가 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="am-btn-group center">
+                                                    <button type="button" class="btn-am-primary btn-plan-check">포스팅
+                                                        저장하기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pc">
+                    <ul class="nav nav-tabs" id="service" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="active" id="home-tab" data-bs-toggle="tab" data-bs-target="#stepOne"
+                                type="button" role="tab" aria-controls="home" aria-selected="true"><span>Step
+                                    #1</span><br>셋팅 할 요금제 선택하기</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="" id="profile-tab" data-bs-toggle="tab" data-bs-target="#stepTwo"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false"><span>Step
+                                    #2</span><br>컨텐츠 베이스
+                                선택하기</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="" id="contact-tab" data-bs-toggle="tab" data-bs-target="#stepThree"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false"><span>Step
+                                    #3</span><br>자동 콘텐츠
+                                생성기</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="" id="contact-tab" data-bs-toggle="tab" data-bs-target="#stepFour"
+                                type="button" role="tab" aria-controls="contact" aria-selected="false"><span>Step
+                                    #4</span><br>포스트 자동화
+                                셋팅하기</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="serviceContent">
+                        <div class="tab-pane fade show active" id="stepOne" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="service-box">
+                                        <p>오토마케팅의 요금제는 충전형과 서비스 별 월정액으로 나누어져 있습니다.<br>필요한 요금제를 선택하여 가입해주세요.</p>
+                                        <div class="am-btn-group vertical">
+                                            <button type="button" class="btn-am-primary">요금제 가입하기</button>
+                                            <button type="button" class="btn-kakao">고객센터(카카오톡) 문의하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="am-card">
+                                                <div class="am-card-header">
+                                                    <h3>충전형 요금제</h3>
+                                                </div>
+                                                <div class="am-card-body">
+                                                    <dl class="point">
+                                                        <dt>잔여 Point<span>88,888 Point</span></dt>
+                                                        <dd>
+                                                            <div class="check-group">
+                                                                <input type="checkbox" id="check01">
+                                                                <label for="check01">포인트 선택</label>
+                                                            </div>
+                                                        </dd>
+                                                    </dl>
+                                                    <div class="select-group">
+                                                        <select name="" id="">
+                                                            <option value="">서비스 선택하기</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="am-card">
+                                                <div class="am-card-header">
+                                                    <h3>월정액 요금제</h3>
+                                                </div>
+                                                <div class="am-card-body">
+                                                    <ul class="plan-group">
+                                                        <li>
+                                                            <div class="plan">
+                                                                <h6>월정액 - 블로그 생성(12건/월)</h6>
+                                                                <div class="check-group">
+                                                                    <input type="checkbox" id="check02">
+                                                                    <label for="check02">선택</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="plan">
+                                                                <h6>월정액 - BLOG Ⅱ</h6>
+                                                                <div class="check-group">
+                                                                    <input type="checkbox" id="check03">
+                                                                    <label for="check03">선택</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="plan">
+                                                                <h6>월 정액 - SNS Ⅱ (인스타그램)</h6>
+                                                                <div class="check-group">
+                                                                    <input type="checkbox" id="check04">
+                                                                    <label for="check04">선택</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="plan">
+                                                                <h6>월정액 - 블로그 생성 (12건/월)
+                                                                </h6>
+                                                                <div class="check-group">
+                                                                    <input type="checkbox" id="check05">
+                                                                    <label for="check05">선택</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="am-btn-group center">
+                                                <button type="button" class="btn-am-primary btn-plan-check">요금제
+                                                    선택</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="stepTwo" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="service-box">
+                                        <p>컨텐츠 베이스란, 작성할 포스팅에 대해 기본 정보로 모든 포스팅의 기본이 되며,<br>
+                                            맞춤형 포스팅을 위한 필수적인 작업입니다.<br>아직 설정하지 않았다면, 먼저 설정해주세요.</p>
+                                        <div class="am-btn-group vertical">
+                                            <button type="button" class="btn-am-primary"
+                                                onclick="location.href='컨텐츠베이스.html'">컨텐츠 베이스 작성하기</button>
+                                            <button type="button" class="btn-kakao"
+                                                onclick="location.href='https://open.kakao.com/o/sm9tCcsg'">고객센터(카카오톡)
+                                                문의하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="am-card">
+                                                <div class="am-card-body">
+                                                    <div class="select-group">
+                                                        <label for="contentBase">컨텐츠 베이스를 선택하세요.</label>
+                                                        <select name="" id="contentBase">
+                                                            <option value="" selected>컨텐츠 베이스를 선택하세요.</option>
+                                                            <option value="Sample">Sample</option>
+                                                            <option value="Sample">Sample</option>
+                                                            <option value="Sample">Sample</option>
+                                                            <option value="Sample">Sample</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="stepThree" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="service-box">
+                                        <p>우측 '콘텐츠' 작성하기' 버튼을 클릭하면 콘텐츠 작성을 시작합니다.<br>- 충전형 요금제는 1회에 1개만 작성이
+                                            가능합니다.<br>- 정액제 요금제는 1회에 3개씩 작성이 가능합니다.</p>
+                                        <div class="am-btn-group vertical">
+                                            <button type="button" class="btn-am-primary"
+                                                onclick="location.href='컨텐츠베이스.html'">컨텐츠 작성하기</button>
+                                            <button type="button" class="btn-kakao"
+                                                onclick="location.href='https://open.kakao.com/o/sm9tCcsg'">고객센터(카카오톡)
+                                                문의하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="stepFour" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>사용자 정보 > 문서함 관리로 진입하면, 생성된 포스팅을 확인 할 수 있습니다.<br>
+                                        하단의 자동화를 설정하지 않고, 수동으로 포스팅도 가능합니다.<br><br>(포스팅 자동화는 월정액 요금제만 가능합니다.단, 네이버
+                                        블로그는 네이버 정책 상 불가능합니다.)</p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="am-card">
+                                                <div class="am-card-body">
+                                                    <ul class="plan-group">
+                                                        <li>
+                                                            <div class="plan">
+                                                                <h6>{포스팅 개요 #1}</h6>
+                                                                <div class="check-group">
+                                                                    <input type="checkbox" id="check02">
+                                                                    <label for="check02">선택</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="plan">
+                                                                <h6>{포스팅 개요 #1}</h6>
+                                                                <div class="check-group">
+                                                                    <input type="checkbox" id="check03">
+                                                                    <label for="check03">선택</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="plan">
+                                                                <h6>{포스팅 개요 #1}</h6>
+                                                                <div class="check-group">
+                                                                    <input type="checkbox" id="check04">
+                                                                    <label for="check04">선택</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="am-card">
+                                                
+                                                <div class="am-card-body">
+                                                    <!-- 포스팅 개요 선택 시, 해당 부분에 달력이 나오고 하단에 시간을 설정할 수 있는 UI 추가 -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="am-btn-group center">
+                                                <button type="button" class="btn-am-primary btn-plan-check">포스팅
+                                                    저장하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+
+        <!-- Start : Footer -->
+        <footer class="footer" id="footer">
+            <!-- 내부 html common.js 확인 -->
+        </footer>
+        <!-- Start : End -->
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/aos.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
