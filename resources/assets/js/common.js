@@ -6,27 +6,49 @@ $(document).ready(function () {
         return `
         <div class="container navbar-dark">
                 <a href="#" class="navbar-brand">
-                    <img src="img/logo.png" alt="Auto Marketing Logo">
-                    <span>시간 절약과 최적의 마케팅<br>Auto Marketing</span>
+                    <img src="img/logo.jpg" alt="Auto Marketing Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="bi bi-list"></i>
                 </button>
                 <nav class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">사용법</a>
+                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">요금제</a>
+                            <a class="nav-link" href="#">요금제 확인</a>
                         </li>
                         <li class="nav-item">
-                            <button>LOGIN</button>
+                            <div class="am-btn-group">
+                                <button type="button" class="btn-inquiry">문의하기</button>
+                                <!-- 로그인 전 -->
+                                <button type="button" class="btn-login">로그인</button>
+                            </div>
+
+                        </li>
+                        <!-- 로그인 후 -->
+                        <li class="dropdown">
+                            <button class="dropdown-toggle">
+                                <div class="login">
+                                    <h6>김선우<span>님</span></h6>
+                                    <i class="bi bi-gear"></i>
+                                </div>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#">● 사용자 정보 관리</a>
+                                <a href="#">● 문서함</a>
+                                <hr>
+                                <a href="#">● Help Center</a>
+                                <a href="#">● Support</a>
+                                <a href="#">● 로그아웃</a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
-            </div>`
+            </div>
+        `
     };
 
     function Footer() {
@@ -80,6 +102,17 @@ $(document).ready(function () {
             content.css('max-height', content.prop('scrollHeight') + 'px');
         } else {
             content.css('max-height', 0);
+        }
+    });
+
+    // dropdown
+    $('.dropdown-toggle').click(function() {
+        $('.dropdown-menu').toggle();
+    });
+
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.dropdown').length) {
+            $('.dropdown-menu').hide();
         }
     });
 });

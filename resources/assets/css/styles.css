@@ -15,6 +15,9 @@
  * SUMMARY:
  * 01) 메인
  * 02) 서비스선택
+ * 03) 로그인
+ * 04) 회원가입
+ * 05) 사용자정보관리
  */
 
 /* **************************************** *
@@ -51,13 +54,15 @@
 }
 
 .main-text-wrap h1 {
-    font-size: 2rem;
+    color: var(--white);
+    font-size: 1.75rem;
     font-weight: 900;
     line-height: 1.5;
 }
 
 .main-text-wrap h4 {
-    font-size: 1.25rem;
+    color: var(--white);
+    font-size: 1rem;
     line-height: 1.5;
     margin: 20px 0 0 0
 }
@@ -183,6 +188,15 @@
 .bg-overlay {
     background-color: rgba(31, 111, 255, .9);
     padding: 6.25rem 0;
+    width: 100%;
+}
+
+.bg-overlay.people {
+    background-color: rgba(88, 104, 207, .5);
+}
+
+.bg-overlay.black {
+    background-color: rgba(0, 0, 0, .76);
 }
 
 .sec03 h1 {
@@ -767,6 +781,7 @@
         border-radius: 4px;
     }
 }
+
 .point {
     display: flex;
     font-size: 1rem;
@@ -911,4 +926,132 @@
         justify-content: flex-end;
     }
 
+}
+
+/* **************************************** *
+ * 로그인
+ * **************************************** */
+.login-area {
+    background: url(../img/main-img-05.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 60px 0 0 0;
+}
+
+.login-wrap {
+    align-items: center;
+    background: var(--flowui-component-library--gray-100);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    width: 100%;
+}
+
+.login-wrap h1 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px 0 8px 0;
+}
+
+.login-wrap button {
+    background: var(--secondary--normal);
+    border: 0;
+    border-radius: 8px;
+    color: var(--white);
+    height: 40px;
+    width: 100%;
+}
+
+.login-bot {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (min-width:992px) {
+    .login-area {
+        padding: 90px 0 0 0;
+    }
+
+    .login-wrap h1 {
+        font-size: 28px;
+    }
+}
+
+/* **************************************** *
+ * 회원가입
+ * **************************************** */
+.sign-area {
+    background: url(../img/main-img-03.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 60px 0 0 0;
+}
+
+.sign-wrap {
+    align-items: center;
+    background: var(--flowui-component-library--gray-100);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    width: 100%;
+}
+
+.sign-wrap h1 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px 0 8px 0;
+    text-align: center;
+}
+
+.sign-wrap button {
+    background: #3898ec;
+    border: 0;
+    border-radius: 8px;
+    color: var(--white);
+    height: 40px;
+    width: 100%;
+}
+
+.sign-bot {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sign-wrap i {
+    font-size: 60px;
+}
+
+.sign-wrap>p {
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.errorbox {
+    background: #ffc3b3;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+    padding: 16px;
+}
+
+@media (min-width:992px) {
+    .sign-area {
+        padding: 90px 0 0 0;
+    }
+
+    .sign-wrap h1 {
+        font-size: 28px;
+    }
 }

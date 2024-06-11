@@ -305,9 +305,10 @@ textarea {
  * **************************************** */
 .header {
     align-items: center;
-    background: var(--primary--noraml);
+    background: var(--white);
     display: flex;
-    padding: .75rem 0;
+    min-height: 60px;
+    padding: 6px 0;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -322,16 +323,12 @@ textarea {
     align-items: center;
     display: flex;
     gap: 0.5rem;
-}
-
-.header .navbar-brand span {
-    color: var(--write);
-    font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .header .navbar-brand img {
-    height: 2.25rem;
-    width: 2.25rem;
+    height: 48px;
 }
 
 .header .navbar-toggler {
@@ -344,25 +341,55 @@ textarea {
     box-shadow: none;
 }
 
-.header .navbar-toggler-icon {
-    height: 2.25rem;
-    width: 2.25rem;
+.header .navbar-toggler i {
+    color: var(--spark-library--foreground-interactive);
+    font-size: 40px;
+}
+
+.header .navbar-collapse {}
+
+.header .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px 0 0 0;
+}
+
+.header .nav-link {
+    color: #333333 !important;
+    font-size: 1rem;
 }
 
 .header .nav-item button {
     background: white;
     border: 0;
-    border-radius: 0.25rem;
+    border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
-    color: #303e57;
-    margin: 8px 0 0 0;
-    padding: 0.5rem 1rem;
+    color: var(white);
+    height: 40px;
+    padding: 0;
+    width: 100%;
+}
+
+.header .nav-item button.btn-inquiry {
+    background-color: var(--spark-library--background--interactive);
+    color: var(--spark-library--foreground-interactive);
+}
+
+.header .nav-item button.btn-login {
+    background-color: var(--spark-library--foreground-interactive);
+    color: var(--spark-library--white);
+}
+
+.header .login i {
+    align-items: center;
+    display: flex;
 }
 
 @media (min-width: 992px) {
     .header {
-        padding: 1rem 0;
+        height: 90px;
     }
 
     .header .container {
@@ -384,6 +411,7 @@ textarea {
     .header .navbar-nav {
         align-items: center;
         flex-direction: row;
+        gap: 60px;
         margin: 0 0 0 auto;
     }
 
@@ -392,21 +420,29 @@ textarea {
         display: flex;
     }
 
-    .header .nav-item:first-child::after {
-        background-color: #e4ebf3;
-        content: '';
-        display: block;
-        width: 1px;
-        height: 1rem;
-    }
-
     .header .nav-item .nav-link {
-        padding: 0 2rem;
+        padding: 0;
     }
 
     .header .nav-item button {
+        height: 48px;
         margin: 0;
+        width: 100px;
     }
+
+    .header .dropdown-menu {
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+        left: auto;
+        padding: 16px;
+        position: absolute !important;
+        right: 0;
+    }
+
+    .header .dropdown-menu a {
+        padding: 4px 0;
+    }
+
 }
 
 /* **************************************** *
@@ -608,7 +644,7 @@ textarea {
 }
 
 .check-group label {
-    align-items: center;
+    align-items: flex-start;
     font-size: 1rem;
     display: flex;
     gap: 4px;
@@ -618,8 +654,10 @@ textarea {
     background: url(../img/ico/i-checkbox.png) no-repeat;
     background-size: cover;
     content: '';
+    flex: 0 0 auto;
     display: inline-block;
     height: 16px;
+    margin: 4px 0 0 0;
     width: 16px;
 }
 
@@ -665,10 +703,18 @@ textarea {
 }
 
 /* input */
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
 .am-input-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
 }
 
 .am-input-group label {
@@ -680,11 +726,17 @@ textarea {
 }
 
 .am-input-group input {
-    border: 1px solid var(--secondary--disabled);
+    border: 1px solid #cccccc;
     border-radius: 8px;
     font-size: 1rem;
     height: 40px;
     padding: 0 0.75rem;
+}
+
+@media (min-width:992px) {
+    .am-input-group input {
+        height: 48px;
+    }
 }
 
 /* file */
@@ -724,6 +776,12 @@ textarea {
     padding: 0 16px;
 }
 
+@media (min-width:992px) {
+    .am-file-group label {
+        height: 48px;
+    }
+}
+
 .am-file-group label i {
     color: #333333;
     font-size: 16px;
@@ -731,4 +789,59 @@ textarea {
 
 .am-file-group p {
     font-size: 1rem;
+}
+
+/* dropdown */
+.header .dropdown-toggle {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-menu {
+    border: 0;
+    display: none;
+    left: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    display: block;
+    font-size: 14px;
+    padding: 8px 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu hr {
+    margin: 8px 0;
+}
+
+.dropdown-toggle {
+    align-items: center;
+    background: var(--white);
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 0;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.login {
+    align-items: center;
+    display: flex;
+    gap: 2px;
 }
