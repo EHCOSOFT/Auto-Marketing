@@ -91,7 +91,7 @@ $(document).ready(function () {
     };
 
     // accordion
-    $('.accordion-header').click(function() {
+    $('.accordion-header').click(function () {
         var content = $(this).next('.accordion-content');
 
         // 모든 아코디언 내용을 닫기
@@ -100,17 +100,19 @@ $(document).ready(function () {
         // 클릭한 내용 토글
         if (content.css('max-height') === '0px') {
             content.css('max-height', content.prop('scrollHeight') + 'px');
+            $(this).addClass('active');
         } else {
             content.css('max-height', 0);
+            $(this).removeClass('active');
         }
     });
 
     // dropdown
-    $('.dropdown-toggle').click(function() {
+    $('.dropdown-toggle').click(function () {
         $('.dropdown-menu').toggle();
     });
 
-    $(document).click(function(event) {
+    $(document).click(function (event) {
         if (!$(event.target).closest('.dropdown').length) {
             $('.dropdown-menu').hide();
         }
