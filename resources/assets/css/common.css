@@ -605,6 +605,7 @@ textarea {
 .am-btn-group {
     display: flex;
     gap: 8px;
+    width: 100%;
 }
 
 .am-btn-group.center {
@@ -619,6 +620,11 @@ textarea {
 .am-btn-group button {
     border: 0;
     border-radius: 8px;
+}
+
+.btn-cancel {
+    background: #d3d3d3 !important;
+    color: #333 !important;
 }
 
 .btn-am-primary {
@@ -681,7 +687,7 @@ textarea {
 .select-group select {
     background: #ffffff url(../img/ico/i-arrow-down.png) no-repeat 50%/16px;
     background-position: right 0.75rem center;
-    border: 1px solid var(--secondary--disabled);
+    border: 1px solid #cccccc;
     border-radius: 8px;
     font-size: 1rem;
     height: 40px;
